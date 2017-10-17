@@ -1,11 +1,11 @@
 @import "bootstrap-sass/bootstrap";
-$my-color: #333;
-body {
-  h1 {
-    color: $my-color;
-  }
+@import url('https://fonts.googleapis.com/css?family=Cinzel:400,700|PT+Sans');
+
+.logo-img {
+  width: 400px;
+  height: auto;
 }
 
-.dank-meme {
-  color: green;
+.navbar-collapse {
+  border-top: 1px solid #e7e7e7;
 }
