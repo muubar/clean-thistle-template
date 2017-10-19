@@ -5,7 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
-@import url("https://fonts.googleapis.com/css?family=Cinzel:400,700|PT+Sans");
+@import url("https://fonts.googleapis.com/css?family=PT+Sans");
 
 @media print {
   *,  *::before,  *::after {
@@ -80,7 +80,7 @@ dialog,header,main,nav,section {
 
 body {
   margin: 0;
-  font-family: "Cinzel", serif;
+  font-family: "goudy-trajan-regular", serif;
   font-size: 1rem;
   font-weight: normal;
   line-height: 1.5;
@@ -384,6 +384,11 @@ mark,.mark {
   margin-right: 5px;
 }
 
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
 code,pre {
   font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
@@ -448,6 +453,15 @@ pre code {
   .container {
     max-width: 1140px;
   }
+}
+
+.container-fluid {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 100%;
 }
 
 .col-1,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-10,.col-11,.col-12,.col,.col-auto {
@@ -1719,7 +1733,7 @@ tbody.collapse.show {
   padding: 0.5rem 1rem;
 }
 
-.navbar > .container {
+.navbar > .container,.navbar > .container-fluid {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -1798,7 +1812,7 @@ tbody.collapse.show {
   justify-content: flex-start;
 }
 
-.navbar-expand > .container {
+.navbar-expand > .container,.navbar-expand > .container-fluid {
   padding-right: 0;
   padding-left: 0;
 }
@@ -1821,7 +1835,7 @@ tbody.collapse.show {
   padding-left: .5rem;
 }
 
-.navbar-expand > .container {
+.navbar-expand > .container,.navbar-expand > .container-fluid {
   flex-wrap: nowrap;
 }
 
@@ -1911,6 +1925,25 @@ tbody.collapse.show {
   text-decoration: none;
   background-color: #e9ecef;
   border-color: #ddd;
+}
+
+.jumbotron {
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  background-color: #e9ecef;
+  border-radius: 0.3rem;
+}
+
+@media (min-width: 576px) {
+  .jumbotron {
+    padding: 4rem 2rem;
+  }
+}
+
+.jumbotron-fluid {
+  padding-right: 0;
+  padding-left: 0;
+  border-radius: 0;
 }
 
 .alert {
@@ -2369,7 +2402,7 @@ button.close {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: "Cinzel", serif;
+  font-family: "goudy-trajan-regular", serif;
   font-style: normal;
   font-weight: normal;
   line-height: 1.5;
@@ -2483,7 +2516,7 @@ button.close {
   display: block;
   max-width: 276px;
   padding: 1px;
-  font-family: "Cinzel", serif;
+  font-family: "goudy-trajan-regular", serif;
   font-style: normal;
   font-weight: normal;
   line-height: 1.5;
@@ -2815,66 +2848,6 @@ button.close {
   padding-bottom: 20px;
   color: #fff;
   text-align: center;
-}
-
-.bg-primary {
-  background-color: #007bff !important;
-}
-
-a.bg-primary:focus,a.bg-primary:hover {
-  background-color: #0062cc !important;
-}
-
-.bg-secondary {
-  background-color: #868e96 !important;
-}
-
-a.bg-secondary:focus,a.bg-secondary:hover {
-  background-color: #6c757d !important;
-}
-
-.bg-success {
-  background-color: #28a745 !important;
-}
-
-a.bg-success:focus,a.bg-success:hover {
-  background-color: #1e7e34 !important;
-}
-
-.bg-info {
-  background-color: #17a2b8 !important;
-}
-
-a.bg-info:focus,a.bg-info:hover {
-  background-color: #117a8b !important;
-}
-
-.bg-warning {
-  background-color: #ffc107 !important;
-}
-
-a.bg-warning:focus,a.bg-warning:hover {
-  background-color: #d39e00 !important;
-}
-
-.bg-danger {
-  background-color: #dc3545 !important;
-}
-
-a.bg-danger:focus,a.bg-danger:hover {
-  background-color: #bd2130 !important;
-}
-
-.bg-light {
-  background-color: #f8f9fa !important;
-}
-
-a.bg-light:focus,a.bg-light:hover {
-  background-color: #dae0e5 !important;
-}
-
-.bg-white {
-  background-color: #fff !important;
 }
 
 .border {
@@ -3268,11 +3241,68 @@ a.text-light:focus,a.text-light:hover {
   visibility: visible !important;
 }
 
+@font-face {
+  font-family: "goudy-trajan";
+  src: url("goudytrajan-bold.woff") format("woff");
+}
+
+/*@font-face {
+  font-family: "goudy-trajan-medium";
+  src: url("goudytrajan-medium.woff") format("woff");
+}*/
+
+@font-face {
+  font-family: "goudy-trajan-regular";
+  src: url("goudytrajan-regular.woff") format("woff");
+}
+
+body {
+  color: #61606e;
+  letter-spacing: 0.16rem;
+}
+
+.text-41 {
+  font-size: 2.56rem;
+}
+
+.text-24 {
+  font-size: 1.5rem;
+}
+
+.text-pastel {
+  color: #cc90b7;
+}
+
+.navbar > .container {
+  justify-content: center;
+}
+
 .logo-img {
-  width: 400px;
+  width: 25rem;
   height: auto;
 }
 
 .navbar-collapse {
+  margin-top: 10px;
   border-top: 1px solid #e7e7e7;
+  font-family: "goudy-trajan", serif;
+}
+
+.jumbotron {
+  background: transparent;
+}
+
+.hero {
+  background-image: url(hero.jpg);
+  background-size: cover;
+  background-position: top center;
+}
+
+.test {
+  color: blue;
+}
+
+.header-border {
+  border: 12px solid #61606e;
+  padding: 1rem;
 }

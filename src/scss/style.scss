@@ -1,11 +1,80 @@
 @import "bootstrap-sass/bootstrap";
-@import url('https://fonts.googleapis.com/css?family=Cinzel:400,700|PT+Sans');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+@font-face {
+  font-family: "goudy-trajan";
+  src: url("goudytrajan-bold.woff") format("woff");
+}
+
+/*@font-face {
+  font-family: "goudy-trajan-medium";
+  src: url("goudytrajan-medium.woff") format("woff");
+}*/
+
+@font-face {
+  font-family: "goudy-trajan-regular";
+  src: url("goudytrajan-regular.woff") format("woff");
+}
+
+
+$text-color: #61606e;
+$pastel-3: #cc90b7;
+$pastel-2: #f2e1ec;
+$yellow-2: #ffffec;
+$green-2: #e7f6e4;
+$primary-font-family: 'goudy-trajan-regular',
+serif;
+$secondary-font-family: 'goudy-trajan',
+serif;
+$sans-font-family: 'PT sans',
+sans-serif;
+
+body {
+  color: $text-color;
+  letter-spacing: 0.16rem;
+}
+
+.text-41 {
+  font-size: 2.56rem;
+}
+
+.text-24 {
+  font-size: 1.5rem;
+}
+
+.text-pastel {
+  color: $pastel-3;
+}
+
+.navbar > .container {
+  justify-content: center;
+}
 
 .logo-img {
-  width: 400px;
+  width: 25rem;
   height: auto;
 }
 
 .navbar-collapse {
+  margin-top: 10px;
   border-top: 1px solid #e7e7e7;
+  font-family: $secondary-font-family;
+}
+
+.jumbotron {
+  background: transparent;
+}
+
+.hero {
+  background-image: url(hero.jpg);
+  background-size: cover;
+  background-position: top center;
+}
+
+.test {
+  color: blue;
+}
+
+.header-border {
+  border: 12px solid $text-color;
+  padding: 1rem;
 }
