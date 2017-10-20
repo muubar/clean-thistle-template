@@ -3002,10 +3002,6 @@ button.close {
   margin: 0 !important;
 }
 
-.ml-0 {
-  margin-left: 0 !important;
-}
-
 .mx-0 {
   margin-right: 0 !important;
   margin-left: 0 !important;
@@ -3013,10 +3009,6 @@ button.close {
 
 .m-1 {
   margin: 0.25rem !important;
-}
-
-.ml-1 {
-  margin-left: 0.25rem !important;
 }
 
 .mx-1 {
@@ -3028,10 +3020,6 @@ button.close {
   margin: 0.5rem !important;
 }
 
-.ml-2 {
-  margin-left: 0.5rem !important;
-}
-
 .mx-2 {
   margin-right: 0.5rem !important;
   margin-left: 0.5rem !important;
@@ -3039,10 +3027,6 @@ button.close {
 
 .m-3 {
   margin: 1rem !important;
-}
-
-.ml-3 {
-  margin-left: 1rem !important;
 }
 
 .mx-3 {
@@ -3054,10 +3038,6 @@ button.close {
   margin: 1.5rem !important;
 }
 
-.ml-4 {
-  margin-left: 1.5rem !important;
-}
-
 .mx-4 {
   margin-right: 1.5rem !important;
   margin-left: 1.5rem !important;
@@ -3065,10 +3045,6 @@ button.close {
 
 .m-5 {
   margin: 3rem !important;
-}
-
-.ml-5 {
-  margin-left: 3rem !important;
 }
 
 .mx-5 {
@@ -3132,10 +3108,6 @@ button.close {
 
 .m-auto {
   margin: auto !important;
-}
-
-.ml-auto {
-  margin-left: auto !important;
 }
 
 .mx-auto {
@@ -3282,9 +3254,13 @@ body {
 }
 
 .navbar-collapse {
-  margin-top: 0.625rem;
-  border-top: 1px solid #e7e7e7;
+  border-top: 1px solid rgba(97, 96, 110, 0.18);
   font-family: "goudy-trajan", serif;
+}
+
+.nav-background {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.11) 0%, rgba(173, 94, 146, 0.11) 51%, rgba(173, 94, 146, 0.11) 100%);
+  border-radius: 10px;
 }
 
 .jumbotron {
