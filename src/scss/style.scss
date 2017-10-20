@@ -5,11 +5,6 @@
   src: url("goudytrajan-bold.woff") format("woff");
 }
 
-/*@font-face {
-  font-family: "goudy-trajan-medium";
-  src: url("goudytrajan-medium.woff") format("woff");
-}*/
-
 @font-face {
   font-family: "goudy-trajan-regular";
   src: url("goudytrajan-regular.woff") format("woff");
@@ -30,7 +25,7 @@ sans-serif;
 
 body {
   color: $text-color;
-  letter-spacing: 0.16rem;
+  letter-spacing: 0.1em;
 }
 
 .text-41 {
@@ -54,6 +49,10 @@ body {
   height: auto;
 }
 
+.wide-letter {
+  letter-spacing: 0.16em;
+}
+
 .navbar-collapse {
   margin-top: 0.625rem;
   border-top: 1px solid #e7e7e7;
@@ -62,10 +61,13 @@ body {
 
 .jumbotron {
   background: transparent;
+  p {
+    width: 90%;
+  }
 }
 
 .hero {
-  background-image: url(hero.jpg);
+  background: linear-gradient(to bottom, rgba(255, 255, 252, 0.11) 0%, rgba(173, 94, 146, 0.05) 48%, rgba(224, 222, 122, 0.07) 100%), url(hero.jpg);
   background-size: cover;
   background-position: top center;
 }
@@ -76,6 +78,6 @@ body {
 
 .header-border {
   border: 0.75rem solid $text-color;
-  margin: 2rem 8rem 0.5rem 8rem;
-  padding: 2.5rem 0;
+  margin: 2rem 4rem 0.5rem 4rem;
+  padding: 2rem 0;
 }
