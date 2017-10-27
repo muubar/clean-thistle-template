@@ -28,6 +28,11 @@ body {
   letter-spacing: 0.1em;
 }
 
+*::selection {
+  background: #E2BCD5;
+  color: #325576;
+}
+
 .text-41 {
   font-size: 2.56rem;
 }
@@ -38,6 +43,10 @@ body {
 
 .text-pastel {
   color: $pastel-3;
+}
+
+.no-letter-spacing {
+  letter-spacing: 0;
 }
 
 .navbar > .container {
@@ -58,6 +67,14 @@ body {
   font-family: $secondary-font-family;
 }
 
+.navbar-toggler {
+  background: url(menu.png) no-repeat 50% 50%;
+  background-size: contain;
+  width: 3rem;
+  height: 3rem;
+  border: 0px;
+}
+
 .nav-background {
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.11) 0%, rgba(173, 94, 146, 0.11) 51%, rgba(173, 94, 146, 0.11) 100%);
   border-radius: 10px;
@@ -66,22 +83,90 @@ body {
 .jumbotron {
   background: transparent;
   p {
-    width: 90%;
+    width: 80%;
+  }
+
+  .container {
+    max-width: 1180px;
   }
 }
 
 .hero {
+  position: relative;
   background: linear-gradient(to bottom, rgba(255, 255, 252, 0.11) 0%, rgba(173, 94, 146, 0.05) 48%, rgba(224, 222, 122, 0.07) 100%), url(hero.jpg);
   background-size: cover;
   background-position: top center;
-}
-
-.test {
-  color: blue;
+  box-shadow: 0px -5px 27px 0px rgba(0, 0, 0, 0.2) inset;
 }
 
 .header-border {
   border: 0.75rem solid $text-color;
   margin: 2rem 4rem 0.5rem 4rem;
-  padding: 2rem 0;
+  padding: 2rem 0.5rem;
+}
+
+.arrow-btn {
+  width: 4rem;
+  height: 4rem;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  $var: 2rem; //sass fix to allow the use of calc()
+  top: calc(100% - #{$var});
+  background-color: $text-color;
+}
+
+.arrow {
+  margin: 0.5rem;
+  width: 3rem;
+  height: 3rem;
+}
+
+.scroll-center {
+  width: 4rem;
+  margin: 0 auto;
+}
+
+
+@media screen and (min-width: 896px) and (max-width: 991) {
+  .header-border {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+  .navbar > .container {
+    max-width: 690px;
+  }
+  .jumbotron p {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  html {
+    font-size: 10px;
+  }
+  .jumbotron p {
+    width: 100%;
+  }
+  .header-border {
+    margin: 0;
+
+  }
+}
+
+@media screen and (max-width: 475px) {
+  html {
+    font-size: 8px;
+  }
 }
