@@ -6,8 +6,7 @@
   "dependencies": {
     "bootstrap": "^4.0.0-beta",
     "jquery": "^3.2.1",
-    "popper.js": "^1.12.5",
-    "open-iconic": "^1.1.1"
+    "popper.js": "^1.12.5"
   },
   "devDependencies": {
     "gulp": "github:gulpjs/gulp#4.0",

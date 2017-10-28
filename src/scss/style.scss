@@ -150,6 +150,10 @@ body {
   .jumbotron p {
     width: 100%;
   }
+
+  .navbar-collapse {
+    font-size: 1.5rem;
+  }
 }
 
 @media screen and (max-width: 575px) {
@@ -162,6 +166,9 @@ body {
   .header-border {
     margin: 0;
 
+  }
+  .navbar-collapse {
+    font-size: 1.5rem;
   }
 }
 
