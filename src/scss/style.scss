@@ -53,8 +53,17 @@ body {
   background: linear-gradient(to bottom, rgba(255, 237, 237, 0) 51%, rgba(242, 225, 236, 1) 52%, rgba(242, 225, 236, 1) 76%, rgba(242, 225, 236, 0) 77%);
 }
 
+.second-section {
+  background-color: $green-2;
+  padding-bottom: 3.5rem;
+}
+
 .first-section {
   background-color: $yellow-2;
+  padding-bottom: 5rem;
+}
+
+.whitespace-fix {
   position: relative;
   top: -2rem;
 }
@@ -79,6 +88,20 @@ h2 {
 
 .wide-letter {
   letter-spacing: 0.16em;
+}
+
+.rounded-icon-container {
+  width: 12.5rem;
+  height: 12.5rem;
+  border-radius: 50%;
+  background-color: $yellow-2;
+  margin: 0 auto 1rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  img {
+    width: 75%;
+  }
 }
 
 .navbar-collapse {
@@ -147,12 +170,17 @@ h2 {
   margin: 0 auto;
 }
 
-.card-text {
+.sans-serif {
   font-family: $sans-font-family;
 }
 
 .icon-margin {
   margin: -0.9rem auto 0 auto !important;
+}
+
+.center-icon {
+  display: block;
+  margin: 0 auto;
 }
 
 .card {
@@ -163,21 +191,22 @@ h2 {
   margin-bottom: 3rem;
   height: 85%;
   img {
-    display: block;
-    margin: 0 auto;
     width: 100%;
     max-width: 8.8rem;
   }
 }
 
-.first-section > .container {
+section > .container {
   width: 85%;
 }
 
+.row-padding {
+  padding-bottom: 3rem;
+}
 
 
 @include media-breakpoint-up(lg) {
-  .first-section > .container {
+  section > .container {
     max-width: 1280px;
   }
 }
@@ -223,6 +252,13 @@ h2 {
   }
   .navbar-collapse {
     font-size: 1.5rem;
+  }
+}
+
+.row-padding {
+  padding-bottom: 0;
+  .col-12 {
+    margin-bottom: 3rem;
   }
 }
 

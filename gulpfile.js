@@ -11,7 +11,7 @@ function html() {
 };
 
 function assets() {
-  return gulp.src(['src/*.png', 'src/*.jpg'])
+  return gulp.src(['src/*.png', 'src/*.jpg', 'src/*.svg'])
     .pipe(gulp.dest('dist/'))
 }
 
