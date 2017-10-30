@@ -49,6 +49,25 @@ body {
   letter-spacing: 0;
 }
 
+.text-accent {
+  background: linear-gradient(to bottom, rgba(255, 237, 237, 0) 51%, rgba(242, 225, 236, 1) 52%, rgba(242, 225, 236, 1) 76%, rgba(242, 225, 236, 0) 77%);
+}
+
+.first-section {
+  background-color: $yellow-2;
+  position: relative;
+  top: -2rem;
+}
+
+h2 {
+  padding: 7rem 0 2rem 0;
+}
+
+.arial-font {
+  font-family: arial;
+}
+
+
 .navbar > .container {
   justify-content: center;
 }
@@ -114,6 +133,7 @@ body {
   $var: 2rem; //sass fix to allow the use of calc()
   top: calc(100% - #{$var});
   background-color: $text-color;
+  z-index: 2;
 }
 
 .arrow {
@@ -127,6 +147,40 @@ body {
   margin: 0 auto;
 }
 
+.card-text {
+  font-family: $sans-font-family;
+}
+
+.icon-margin {
+  margin: -0.9rem auto 0 auto !important;
+}
+
+.card {
+  border-radius: 0;
+  border: 4px solid $pastel-2;
+  padding: 1rem 0.2rem;
+  background-color: inherit;
+  margin-bottom: 3rem;
+  height: 85%;
+  img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 8.8rem;
+  }
+}
+
+.first-section > .container {
+  width: 85%;
+}
+
+
+
+@include media-breakpoint-up(lg) {
+  .first-section > .container {
+    max-width: 1280px;
+  }
+}
 
 @media screen and (min-width: 896px) and (max-width: 991) {
   .header-border {
