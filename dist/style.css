@@ -2062,6 +2062,10 @@ button.close {
   display: block !important;
 }
 
+.d-flex {
+  display: flex !important;
+}
+
 @media (min-width: 576px) {
   .d-sm-none {
     display: none !important;
@@ -2069,6 +2073,10 @@ button.close {
 
   .d-sm-block {
     display: block !important;
+  }
+
+  .d-sm-flex {
+    display: flex !important;
   }
 }
 
@@ -2079,6 +2087,86 @@ button.close {
 
   .d-lg-block {
     display: block !important;
+  }
+
+  .d-lg-flex {
+    display: flex !important;
+  }
+}
+
+.flex-row {
+  flex-direction: row !important;
+}
+
+.flex-wrap {
+  flex-wrap: wrap !important;
+}
+
+.justify-content-start {
+  justify-content: flex-start !important;
+}
+
+.justify-content-end {
+  justify-content: flex-end !important;
+}
+
+.justify-content-center {
+  justify-content: center !important;
+}
+
+.justify-content-between {
+  justify-content: space-between !important;
+}
+
+@media (min-width: 576px) {
+  .flex-sm-row {
+    flex-direction: row !important;
+  }
+
+  .flex-sm-wrap {
+    flex-wrap: wrap !important;
+  }
+
+  .justify-content-sm-start {
+    justify-content: flex-start !important;
+  }
+
+  .justify-content-sm-end {
+    justify-content: flex-end !important;
+  }
+
+  .justify-content-sm-center {
+    justify-content: center !important;
+  }
+
+  .justify-content-sm-between {
+    justify-content: space-between !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .flex-lg-row {
+    flex-direction: row !important;
+  }
+
+  .flex-lg-wrap {
+    flex-wrap: wrap !important;
+  }
+
+  .justify-content-lg-start {
+    justify-content: flex-start !important;
+  }
+
+  .justify-content-lg-end {
+    justify-content: flex-end !important;
+  }
+
+  .justify-content-lg-center {
+    justify-content: center !important;
+  }
+
+  .justify-content-lg-between {
+    justify-content: space-between !important;
   }
 }
 
@@ -2477,6 +2565,10 @@ button.close {
   }
 }
 
+.text-justify {
+  text-align: justify !important;
+}
+
 .text-left {
   text-align: left !important;
 }
@@ -2731,6 +2823,34 @@ section > .container {
 
 .row-padding {
   padding-bottom: 3rem;
+}
+
+.portfolio {
+  position: relative;
+  top: -2rem;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.4) 100%), url(floral-pattern.jpg) repeat 0 0;
+}
+
+.btn-project {
+  border: none;
+  height: 3rem;
+  width: 13rem;
+  color: #61606e;
+  background-color: #f2e1ec;
+  transition: all 0.15s ease-in-out;
+  margin-right: 3%;
+}
+
+.last-project-btn {
+  margin-right: 0;
+}
+
+.btn-project:focus {
+  outline: none;
+}
+
+.btn-project-active {
+  background-color: #e2bcd5;
 }
 
 @media (min-width: 992px) {

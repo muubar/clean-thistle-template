@@ -73,8 +73,17 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_bootstrap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_bootstrap__);
 
 $(document).ready(function () {
+  //show navigation menu background gradient
   $(".navbar-toggler").click(function () {
     $("#nav-main").toggleClass("nav-background");
+  })
+
+  //toggle btn-project-active class between portfolio buttons
+  $(".btn-project").click(function () {
+    if ($(this)[0] !== $(".btn-project-active")[0]) {
+      $(".btn-project").not($(this)).removeClass("btn-project-active");
+      $(this).toggleClass("btn-project-active");
+    }
   })
 });
 
