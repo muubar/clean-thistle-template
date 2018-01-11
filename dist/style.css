@@ -2978,9 +2978,17 @@ section > .container {
   background-color: #e2bcd5;
 }
 
-.carousel-2,.carousel-3,.carousel-4 {
+div .carousel-active {
+  display: flex;
+  visibility: visible;
+  opacity: 1;
+}
+
+.carousel-1,.carousel-2,.carousel-3,.carousel-4 {
   display: none;
-  transition: all 0.15s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
 }
 
 @media (min-width: 992px) {

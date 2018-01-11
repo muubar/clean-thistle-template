@@ -2,7 +2,7 @@
   "name": "clean-thistle-template",
   "version": "1.0.0",
   "description": "a bootstrap template",
-  "main": "index.js",
+  "main": "main.js",
   "dependencies": {
     "bootstrap": "^4.0.0-beta",
     "jquery": "^3.2.1",
