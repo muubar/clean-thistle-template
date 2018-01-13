@@ -54,14 +54,14 @@ body {
   background: linear-gradient(to bottom, rgba(255, 237, 237, 0) 51%, rgba(242, 225, 236, 1) 52%, rgba(242, 225, 236, 1) 76%, rgba(242, 225, 236, 0) 77%);
 }
 
-.second-section {
+.green-section {
   background-color: $green-2;
   padding-bottom: 3.5rem;
 }
 
-.first-section {
+.yellow-section {
   background-color: $yellow-2;
-  padding-bottom: 5rem;
+  padding-bottom: 3.5rem;
 }
 
 .whitespace-fix {
@@ -247,11 +247,50 @@ div .carousel-active {
 .carousel-1,
 .carousel-2,
 .carousel-3,
-.carousel-4 {
+.carousel-4,
+.carousel-5 {
   display: none;
   visibility: hidden;
   opacity: 0;
   transition: all 0.3s ease-in-out;
+}
+
+textarea {
+  display: block;
+  resize: none;
+  width: 100%;
+  height: 12rem;
+  text-transform: none;
+
+}
+
+#name {
+  max-width: 50%;
+}
+
+.form-control:focus,
+textarea:focus,
+button:focus,
+.send-btn:focus {
+  outline: none;
+  border-color: $pastel-1;
+  box-shadow: 0 0 10px $pastel-1;
+}
+
+.form-control {
+  border-radius: 0;
+}
+
+.send-btn {
+  border: 1px solid transparent;
+  padding: 0.3rem 0.75rem;
+  transition: all 0.15s ease-in-out;
+  line-height: 1.25;
+  background-color: $pastel-2;
+  position: absolute;
+  top: 44%;
+  right: 0;
+  width: 100%
 }
 
 @include media-breakpoint-up(lg) {

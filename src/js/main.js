@@ -9,7 +9,6 @@ $(document).ready(function () {
   $(".btn-project").click(function () {
     if (this !== $(".btn-project-active")[0]) {
       $(".btn-project-active").removeClass("btn-project-active");
-      //$(".btn-project").not($(this)).removeClass("btn-project-active");
       $(this).toggleClass("btn-project-active");
     }
 
@@ -31,7 +30,6 @@ $(document).ready(function () {
 });
 
 function toggleCarousel(btn, car) {
-  console.log("yes")
   if (car !== $(".carousel-active")[0]) {
     $(".carousel-active").removeClass("carousel-active");
     $(car).toggleClass("carousel-active");
