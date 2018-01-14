@@ -100,12 +100,27 @@ $(document).ready(function () {
         break;
     }
   })
+  $("a").on('click', function (event) {
+    smoothScroll(this);
+  });
 });
 
 function toggleCarousel(btn, car) {
   if (car !== $(".carousel-active")[0]) {
     $(".carousel-active").removeClass("carousel-active");
     $(car).toggleClass("carousel-active");
+  }
+}
+
+function smoothScroll(elem) {
+  if (elem.hash !== "") {
+    event.preventDefault();
+    var hash = elem.hash;
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 800, function () {
+      window.location.hash = hash;
+    });
   }
 }
 
