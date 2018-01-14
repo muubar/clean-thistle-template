@@ -12,11 +12,13 @@
 
 
 $text-color: #61606e;
+$pastel-4: #ad5e92;
 $pastel-3: #cc90b7;
 $pastel-2: #f2e1ec;
 $pastel-1: #e2bcd5;
 $yellow-2: #ffffec;
 $green-2: #e7f6e4;
+$gray: #f1f0f1;
 $primary-font-family: 'goudy-trajan-regular',
 serif;
 $secondary-font-family: 'goudy-trajan',
@@ -32,6 +34,28 @@ body {
 *::selection {
   background: #E2BCD5;
   color: #325576;
+}
+
+a {
+  color: $pastel-1;
+}
+
+a:hover {
+  color: $pastel-4;
+}
+
+footer {
+  margin-top: -2rem;
+  background-color: $gray;
+  span {
+    color: $pastel-1;
+  }
+  div {
+    max-width: 18rem;
+  }
+  img {
+    width: 4rem;
+  }
 }
 
 .text-41 {
@@ -364,7 +388,6 @@ button:focus,
   }
   .header-border {
     margin: 0;
-
   }
   .navbar-collapse {
     font-size: 1.5rem;
