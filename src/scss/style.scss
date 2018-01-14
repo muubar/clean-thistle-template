@@ -166,6 +166,12 @@ h2 {
   height: 3rem;
 }
 
+.contact-icon {
+  margin-right: 0.5rem;
+  width: 3rem;
+  height: 3rem;
+}
+
 .scroll-center {
   width: 4rem;
   margin: 0 auto;
@@ -293,6 +299,19 @@ button:focus,
   width: 100%
 }
 
+.contact {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.section-padding {
+  padding-bottom: 3rem;
+}
+
 @include media-breakpoint-up(lg) {
   section > .container {
     max-width: 1280px;
@@ -331,6 +350,9 @@ button:focus,
   .carousel-inner {
     margin-bottom: 1.5rem;
   }
+  .contact {
+    margin-top: 4rem;
+  }
 }
 
 @media screen and (max-width: 575px) {
@@ -349,6 +371,9 @@ button:focus,
   }
   .carousel-inner {
     margin-bottom: 1.5rem;
+  }
+  .contact {
+    margin-top: 4rem;
   }
 }
 
