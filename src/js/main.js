@@ -25,6 +25,9 @@ $(document).ready(function () {
       case "btn-project-4":
         toggleCarousel($("#btn-project-4")[0], $(".carousel-4")[0]);
         break;
+      case "btn-project-5":
+        toggleCarousel($("#btn-project-5")[0], $(".carousel-5")[0]);
+        break;
     }
   })
   $("a").on('click', function (event) {
@@ -35,7 +38,9 @@ $(document).ready(function () {
 function toggleCarousel(btn, car) {
   if (car !== $(".carousel-active")[0]) {
     $(".carousel-active").removeClass("carousel-active");
-    $(car).toggleClass("carousel-active");
+    $(".carousel-active").removeClass("testy");
+    $(car).addClass("testy");
+    $(car).addClass("carousel-active");
   }
 }
 
