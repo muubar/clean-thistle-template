@@ -195,7 +195,6 @@ h2 {
   border: 4px solid $pastel-2;
   padding: 1rem 0.2rem;
   background-color: inherit;
-  margin-bottom: 3rem;
   height: 85%;
   img {
     width: 100%;
@@ -215,11 +214,9 @@ section > .container {
   position: relative;
   top: -2rem;
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.4) 100%), url(floral-pattern.jpg) repeat 0 0;
+  padding-bottom: 6.5rem;
 }
 
-.container-btn-project {
-  margin-bottom: 3rem;
-}
 
 .btn-project {
   //border-radius: 0.25rem;
@@ -330,6 +327,9 @@ button:focus,
   }
   .carousel-inner {
     margin-bottom: 1.5rem;
+  }
+  form {
+    margin-bottom: 3rem;
   }
 }
 
