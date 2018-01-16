@@ -11,13 +11,13 @@
 }
 
 
-$text-color: #61606e;
-$pastel-4: #ad5e92;
-$pastel-3: #cc90b7;
-$pastel-2: #f2e1ec;
-$pastel-1: #e2bcd5;
-$yellow-2: #ffffec;
-$green-2: #e7f6e4;
+$text-color: #56546e;
+$pastel-4: #ad4c8b;
+$pastel-3: #cc7cb0;
+$pastel-2: #f2c9e4;
+$pastel-1: #e3a6ce;
+$yellow-2: #ffffd4;
+$green-2: #d2f5cb;
 $gray: #f1f0f1;
 $primary-font-family: 'goudy-trajan-regular',
 serif;
@@ -32,7 +32,7 @@ body {
 }
 
 *::selection {
-  background: #E2BCD5;
+  background: $pastel-1;
   color: #325576;
 }
 
@@ -75,7 +75,7 @@ footer {
 }
 
 .text-accent {
-  background: linear-gradient(to bottom, rgba(255, 237, 237, 0) 51%, rgba(242, 225, 236, 1) 52%, rgba(242, 225, 236, 1) 76%, rgba(242, 225, 236, 0) 77%);
+  background: linear-gradient(to bottom, rgba(255, 237, 237, 0) 51%, rgba(242, 201, 228, 1) 52%, rgba(242, 201, 228, 1) 76%, rgba(242, 201, 228, 0) 77%);
 }
 
 .green-section {
@@ -130,7 +130,7 @@ h2 {
 }
 
 .navbar-collapse {
-  border-top: 1px solid rgba(97, 96, 110, 0.18);
+  border-top: 1px solid rgba(86, 84, 110, 0.18);
   font-family: $secondary-font-family;
 }
 
@@ -143,7 +143,7 @@ h2 {
 }
 
 .nav-background {
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.11) 0%, rgba(173, 94, 146, 0.11) 51%, rgba(173, 94, 146, 0.11) 100%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.11) 0%, rgba(173, 76, 139, 0.11) 51%, rgba(173, 76, 139, 0.11) 100%);
   border-radius: 10px;
 }
 
@@ -160,7 +160,7 @@ h2 {
 
 .hero {
   position: relative;
-  background: linear-gradient(to bottom, rgba(255, 255, 252, 0.11) 0%, rgba(173, 94, 146, 0.05) 48%, rgba(224, 222, 122, 0.07) 100%), url(hero.jpg);
+  background: linear-gradient(to bottom, rgba(255, 255, 252, 0.11) 0%, rgba(173, 76, 139, 0.05) 48%, rgba(224, 222, 99, 0.07) 100%), url(hero.jpg);
   background-size: cover;
   background-position: top center;
   box-shadow: 0px -5px 27px 0px rgba(0, 0, 0, 0.2) inset;
