@@ -4029,6 +4029,10 @@ div .carousel-active {
   opacity: 1;
 }
 
+.carousel-inner {
+  border: 0.25rem solid #56546e;
+}
+
 .carousel-1,.carousel-2,.carousel-3,.carousel-4,.carousel-5 {
   display: none;
   visibility: hidden;

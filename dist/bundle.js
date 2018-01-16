@@ -104,7 +104,7 @@ $(document).ready(function () {
     }
   })
   $("a").on('click', function (event) {
-    smoothScroll(this);
+    smoothScroll(this, event);
   });
 });
 
@@ -117,9 +117,9 @@ function toggleCarousel(btn, car) {
   }
 }
 
-function smoothScroll(elem) {
+function smoothScroll(elem, e) {
   if (elem.hash !== "") {
-    event.preventDefault();
+    e.preventDefault();
     var hash = elem.hash;
     $('html, body').animate({
       scrollTop: $(hash).offset().top
