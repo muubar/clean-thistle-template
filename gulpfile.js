@@ -19,7 +19,7 @@ function sassy() {
   return gulp.src('src/scss/style.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(purify(['dist/bundle.js', 'src/*.html']))
-    //.pipe(cleanCSS())
+    .pipe(cleanCSS())
     .pipe(gulp.dest('dist/'));
 };
 

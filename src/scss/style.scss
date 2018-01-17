@@ -1,5 +1,4 @@
 @import "bootstrap-sass/bootstrap";
-@import url('https://fonts.googleapis.com/css?family=PT+Sans');
 @font-face {
   font-family: "goudy-trajan";
   src: url("goudytrajan-bold.woff") format("woff");
@@ -23,8 +22,6 @@ $primary-font-family: 'goudy-trajan-regular',
 serif;
 $secondary-font-family: 'goudy-trajan',
 serif;
-$sans-font-family: 'PT sans',
-sans-serif;
 
 body {
   color: $text-color;
@@ -199,10 +196,6 @@ h2 {
 .scroll-center {
   width: 4rem;
   margin: 0 auto;
-}
-
-.sans-serif {
-  font-family: $sans-font-family;
 }
 
 .icon-margin {
